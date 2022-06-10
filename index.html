@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/48fa2c6b3f.js" crossorigin="anonymous"></script>
+    <title>FIUBA - Facultad de Ingeniería de la Universidad de Buenos Aires</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logofiuba.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="">SOBRE NOSOTROS</a></li>
+                    <li><a href="">ACADEMICO</a></li>
+                    <li><a href="">CONTACTO</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Facultad de Ingeniería de la Universidad de Buenos Aires</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="" class="btn">Visitanos para saber mas</a>
+        </div>
+    </section>
+
+    <!-- COURSES -->
+
+    <section class="courses">
+        <h1>Carreras que ofrecemos</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="courses-row">
+            <a href="" class="courses-col">
+                <h3>GRADO</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin purus eu iaculis pretium. Ut sed elit non dolor porttitor finibus at eget dui. Sed eu est varius nulla tempor porttitor. Etiam varius ultricies ante vitae lacinia. Integer facilisis, nisi eget consectetur lacinia, magna augue maximus odio, in dignissim tellus nibh vitae magna.</p>
+            </a>
+            <a href="" class="courses-col">
+                <h3>POSGRADO</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin purus eu iaculis pretium. Ut sed elit non dolor porttitor finibus at eget dui. Sed eu est varius nulla tempor porttitor. Etiam varius ultricies ante vitae lacinia. Integer facilisis, nisi eget consectetur lacinia, magna augue maximus odio, in dignissim tellus nibh vitae magna.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- CAMPUS -->
+
+    <section class="campus">
+        <h1>Nuestras sedes</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="campus-row">
+            <a href="https://goo.gl/maps/pvCRRdjmmAPL5WuA8" target="_blank" class="campus-col">
+                <img src="images/lasheras.webp" alt="">
+                <div class="layer">
+                    <h3>LAS HERAS</h3>
+                </div>
+            </a>
+            <a href="https://goo.gl/maps/NYtHDdR3RwoDrsUS8" target="_blank" class="campus-col">
+                <img src="images/paseocolon.jpg" alt="">
+                <div class="layer">
+                    <h3>PASEO COLÓN</h3>
+                </div>
+            </a>
+            <a href="https://goo.gl/maps/sXDebDVNQd26ZZQbA" target="_blank" class="campus-col">
+                <img src="images/ciudaduni.jpg" alt="">
+                <div class="layer">
+                    <h3>CIUDAD UNIVERSITARIA</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div>
+            <p>Facultad de Ingeniería de la Universidad de Buenos Aires</p>
+            <p>Av. Paseo Colón 850 - C1063ACV - Buenos Aires - Argentina</p>
+            <p>Tel.: +54 (11) 528-50401</p>
+            <a href="mailto:comunicacion@fi.uba.ar">comunicacion@fi.uba.ar</a>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/ingenieriauba/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/ingenieriauba" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/ingenieriauba/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/user/FIUBAoficial" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/ingenier%C3%ADauba" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FOR TOGGLE MENU -->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
